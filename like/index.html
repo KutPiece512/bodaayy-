@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday 🌹</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CUSTOMIZE BAR -->
+  <div id="customize-bar">
+    <span class="bar-label">✦ Greeting</span>
+    <input type="text" id="name-input" placeholder="kechii hoo....Dollemon" />
+    <input type="text" id="sender-input" placeholder="bodayyy hai badmoshh kaa" />
+    <button id="close-bar-btn" title="Hide bar">✕</button>
+  </div>
+
+  <!-- FALLING PETALS -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="crown">💐</div>
+    <p class="hero-sub">Wishing You a Very Very </p>
+    <h1 class="hero-name">
+      Happy Birthday,<br>
+      <span id="her-name-display">Dollemon</span>
+    </h1>
+    <div class="gold-line"></div>
+    <p class="hero-date" id="date-display">25 Feburary 2026 ✨</p>
+    <div class="scroll-hint">
+      <span>Scroll Kllo Dollemon</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ====== LETTER / NOTE ====== -->
+  <div class="section-wrapper note-section reveal">
+    <span class="section-label">A letter from my soul</span>
+    <h2 class="section-title">Words I mean with every breath</h2>
+    <div class="divider"></div>
+    <div class="letter-card">
+      <p
+        class="letter-text"
+        id="letter-content"
+        contenteditable="true"
+        spellcheck="false"
+      >
+        Happy Birthday Mellu dollemon 💖, First of all I hope tuje mella gift accha lga hoga  and aaj toh tarrefe hogi motuuu ki...... voh bhi english mai... hehe😁
+        <br /><br />
+        There are not enough stars in the sky to represent how bright you make my world.
+        You are warmth in winter, laughter in quiet rooms, and home in every form the word can take.
+        <br /><br />
+        On your birthday, I want you to know that every moment spent with you is a gift I hold close.
+        You deserve every beautiful thing life has to offer — and so much more than words can say.
+        <br /><br />
+        May this year bring you joy in the smallest things, adventures in the grandest places,
+        and love that surrounds you every single day. I am so grateful you exist.
+        <br /><br />
+        Again a bery bery Happy birthday, Dollemon cuttuuuuuuu✨.
+      </p>
+      <p class="letter-sig" id="sig-display">— With all my bahut Sara Pyaar 🌹</p>
+    </div>
+
+  <!-- ====== HER PHOTO ====== -->
+  <div class="section-wrapper her-photo-section reveal">
+    <span class="section-label">The birthday gurll</span>
+    <h2 class="section-title">Mighty Dollemonn </h2>
+    <div class="divider"></div>
+
+    <div class="her-photo-frame">
+      <label for="her-photo-input" class="her-photo-label">
+        <div class="her-photo-placeholder" id="her-photo-box">
+          <span class="upload-icon">🌸</span>
+          <span class="upload-text"></span>
+          <img id="her-photo-preview" src="https://cdn.discordapp.com/attachments/1247457923068723313/1475535319381315604/WhatsApp_Image_2026-02-23_at_10.09.49_PM.jpeg?ex=699dd6da&is=699c855a&hm=e47433b0c0bf366c96aa530ef6e14b1cfabc2738e2fff4d495de7fba93c14ff8" alt="Her photo" />
+        </div>
+      </label>
+      <input type="file" id="her-photo-input" accept="image/*" />
+    </div>
+
+    <p
+      class="her-caption"
+      id="her-caption-text"
+      contenteditable="true"
+    >Ek yesi shayari jisko kese likhe pata nahi✨</p>
+  </div>
+
+  <!-- ====== MEMORIES ====== -->
+  <div class="section-wrapper reveal">
+    <span class="section-label">Pics of Youu Obviosly</span>
+    <h2 class="section-title">Dekho toh Nathkhat koo 😁</h2>
+    <div class="divider"></div>
+    <div class="memories-grid" id="memories-grid">
+
+  <!-- MEMORY 1 - replace the src with your image path -->
+    <div class="memory-card">
+      <img src="https://cdn.discordapp.com/attachments/1247457923068723313/1475538584172757144/WhatsApp_Image_2026-02-23_at_10.09.51_PM_1.jpeg?ex=699dd9e4&is=699c8864&hm=de086828012845e9a45db0f97b132cb50ac72092dfbf3bdd31c8ee01b80c5f04&" alt="Memory 1" style="width:100%; height:100%; object-fit:cover;" />
+      <div class="memory-overlay"><span class="memory-overlay-label"></span></div>
+    </div>
+
+  <!-- MEMORY 2 -->
+    <div class="memory-card">
+      <img src="https://cdn.discordapp.com/attachments/1247457923068723313/1475540540635480194/WhatsApp_Image_2026-02-23_at_10.40.44_PM.jpeg?ex=699ddbb7&is=699c8a37&hm=e59214a10cc9c89265fca4fd66f88b3193b1f31e48aecc70854cd63ff2b0fb30" alt="Memory 2" style="width:100%; height:100%; object-fit:cover;" />
+      <div class="memory-overlay"><span class="memory-overlay-label"></span></div>
+    </div>
+
+  <!-- MEMORY 3 -->
+    <div class="memory-card">
+      <img src="https://cdn.discordapp.com/attachments/1247457923068723313/1475538584911089664/WhatsApp_Image_2026-02-23_at_10.09.50_PM_1.jpeg?ex=699dd9e4&is=699c8864&hm=6502fd1977deae15f292bc3508d1382bb0e3f675e8e61ef40d61a6571c2d2e9f&" alt="Memory 3" style="width:100%; height:100%; object-fit:cover;" />
+      <div class="memory-overlay"><span class="memory-overlay-label"></span></div>
+    </div>
+
+  <!-- MEMORY 4 -->
+  <div class="memory-card">
+      <img src="https://cdn.discordapp.com/attachments/1247457923068723313/1475541322768191499/WhatsApp_Image_2026-02-23_at_10.43.38_PM.jpeg?ex=699ddc71&is=699c8af1&hm=9fbd5bb1bbf82a53d38dca0a1cb8fefcdc8ca1016dcc3fa07fe0c85b94f23282&" alt="Memory 4" style="width:100%; height:100%; object-fit:cover;" />
+      <div class="memory-overlay"><span class="memory-overlay-label"></span></div>
+    </div>
+
+  <!-- MEMORY 5 -->
+    <div class="memory-card">
+      <img src="https://cdn.discordapp.com/attachments/1247457923068723313/1475538693262676040/WhatsApp_Image_2026-02-23_at_10.09.52_PM.jpeg?ex=699dd9fe&is=699c887e&hm=2e22b372ad5597084ffb8f643b549e44966976a72adee1983855121a74d8987c" alt="Memory 5" style="width:100%; height:100%; object-fit:cover;" />
+      <div class="memory-overlay"><span class="memory-overlay-label"></span></div>
+    </div>
+
+  <!-- MEMORY 6 -->
+    <div class="memory-card">
+      <img src="https://cdn.discordapp.com/attachments/1247457923068723313/1475541322197631027/WhatsApp_Image_2026-02-23_at_10.43.56_PM.jpeg?ex=699ddc71&is=699c8af1&hm=25981d2ad00e7c63a515da669d316f9f0033cf0bc965c0ea30fb4dce03dfd35a&" alt="Memory 6" style="width:100%; height:100%; object-fit:cover;" />
+      <div class="memory-overlay"><span class="memory-overlay-label"></span></div>
+    </div>
+
+</div>
+    <p class="edit-hint" style="text-align:center; margin-top:1.2rem;"></p>
+  </div>
+
+  <!-- ====== BIRTHDAY WISH ====== -->
+  <div class="wish-section reveal">
+    <span class="candles">🕯️🎂🕯️</span>
+    <p class="wish-text">
+      May every wish you make today come true.<br />
+      May every dream you hold dear <em>bloom</em> into reality.<br />
+      And may you always know just how deeply,<br />
+      truly, <em>endlessly</em> you are loved.
+    </p>
+    <div class="gold-line"></div>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>Made with 🌹 for dollemon</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
